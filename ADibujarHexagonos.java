@@ -5,13 +5,13 @@ import java.util.*;
  * ENTRADA:
  * La entrada consta de una serie de casos de prueba. 
  * Cada caso de prueba es un entero mayor o igual que 0, 
- * seguido del car·cter con el que se formar· el hex·gono.
+ * seguido del car√°cter con el que se formar√° el hex√°gono.
  * El programa terminara cuando se ingresen los valores 0 0;
  * 
  * SALIDA:
- * Para cada caso de prueba se mostrar· el hex·gono regular 
- * que tiene como longitud de lado el n˙mero de caracteres especificado. 
- * Dicho hex·gono estar· dibujado con el car·cter proporcionado en la entrada. */
+ * Para cada caso de prueba se mostrar√° el hex√°gono regular 
+ * que tiene como longitud de lado el n√∫mero de caracteres especificado. 
+ * Dicho hex√°gono estar√° dibujado con el car√°cter proporcionado en la entrada. */
 
 public class ADibujarHexagonos {
 
@@ -54,24 +54,23 @@ public class ADibujarHexagonos {
 		    	aux+=2;
 		    	aux2--;
 
-	    	}//for filas
+	             }//for filas
 	
-	    	for(int j=0; j<aux; j++) {
-			
+	    	     for(int j=0; j<aux; j++) {
+			     
 	    		System.out.printf("%c", simbolo); //fila central del hexagono
 				
-	    	}//for
+	             }//for
 		
-	    	System.out.printf("\n");
+	    	     System.out.printf("\n");
+	    	    aux-=2;
+	    	    aux2++;
 		
-	    	aux-=2;
-	    	aux2++;
-		
-	    	for(int i=1; i<lados; i++) {
+	    	    for(int i=1; i<lados; i++) {
 			
-                for(int k=0; k<aux2; k++ ) {
+                        for(int k=0; k<aux2; k++ ) {
 				
-			        System.out.printf(" ");	
+			    System.out.printf(" ");	
 				
 	    		}//for espacios
 		
@@ -83,7 +82,7 @@ public class ADibujarHexagonos {
 
 	    		System.out.printf("\n");
 		    	aux-=2;
-                aux2++;
+                        aux2++;
 			
 	    	}//for filas
 	    		
